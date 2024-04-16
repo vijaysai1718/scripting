@@ -2,10 +2,10 @@
 
 echo "please enter the username :"
 
-read -s Username
+read  Username # here we are not appending anything so username details will be shown inthe console
 
 echo "please enter the password:"
 
-read -s Password
+read -s Password  #-s it will not shows the values entered by the user 
 
 echo "user as entred username as $Username and password as $Password"

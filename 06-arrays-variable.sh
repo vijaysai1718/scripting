@@ -1,5 +1,5 @@
 #!/bin/bash
-CricketTeam =("RCB" "SRH" "MI" "RR" "KKR" "DC" "CSK" "KINGX1" "LSG" "GT")
+CricketTeam=("RCB" "SRH" "MI" "RR" "KKR" "DC" "CSK" "KINGX1" "LSG" "GT")
 
 echo "My fav Ipl team is ${CricketTeam[1]}"
 

@@ -7,5 +7,5 @@ Name2=uday
 
 echo $Name1:"hi $Name2, How are you"
 echo $Name2:"hi $Name1, Fine yar what about you"
-echo $Name3:"Good"
-echo $Name4:"okay vijay will text you after sometime"
+echo $Name1:"Good"
+echo $Name2:"okay vijay will text you after sometime"

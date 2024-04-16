@@ -17,7 +17,7 @@ git commit -m "addeed the new file"
 ```
 git push origin main
 ```
-** we have use the naming convention properly like we can use the hyphnos(-) if we want to seperate two words**
+** we have use the naming convention properly like we can use the hyphnos(-) if we want to seperate two words **
 
 ```
 git add . ; git commit -m "proper message for the commit" ; git push origin main

@@ -2,7 +2,7 @@
 
 #decalring the variable 
 
-Name1= vijay
+Name1=vijay
 Name2=uday
 
 echo $Name1:"hi $Name2, How are you"

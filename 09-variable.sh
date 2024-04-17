@@ -2,13 +2,13 @@
 
 #conditions partice 
 
-number=$1
+Number=$1
 
 
-if [$number gt 100]
+if [ $Number -gt 100 ]
 then 
-echo "entered number  is greater"
+echo "entered $Number  is greater"
 else
-echo "entered number is lesser"
+echo "entered $Number is lesser"
 fi
 

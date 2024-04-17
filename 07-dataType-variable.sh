@@ -10,4 +10,3 @@ Sum=$((Number1+Number2))
 
 echo "sum of the 2 values is : ${Sum}"
 
-echo "print the vlaues $@"

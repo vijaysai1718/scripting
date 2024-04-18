@@ -32,6 +32,7 @@ fi
 
 ```
 dnf install github -y &>>$LogFile 
+
 ```
 
 # $? this means it will give the pervious command status if 0 means it was success other wise failure 
@@ -40,6 +41,7 @@ validate $? "Installation of the github" # vaiidate is the function name we are 
 
 ```
 dnf install docker -y &>>$LogFile
+
 ```
 
 validate $? "Installation of the docker"

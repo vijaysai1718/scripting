@@ -9,7 +9,7 @@ else
 echo "you are having the super acess to install the software"
 fi
 
-dnf install mysql -y
+dnf install docker -y
 
 if [ $? -ne 0 ]
 then
@@ -19,7 +19,7 @@ else
 echo "Mysql installation was successful"
 fi
 
-dnf install github -y
+dnf install git -y
 
 if [ $? -ne 0 ]
 then

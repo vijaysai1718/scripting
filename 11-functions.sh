@@ -21,7 +21,7 @@ else
 echo "$2 is success"
 fi
 
-dnf install git -y &>>$LogFile
+dnf install github -y &>>$LogFile
 
 validate $? "Installation of the github"
 

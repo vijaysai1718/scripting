@@ -25,10 +25,10 @@ else
 echo -e "$2 is $Green success $Normal"
 fi
 
-dnf install github -y 1>>$LogFile
+dnf install github -y &>>$LogFile
 
 validate $? "Installation of the github"
 
-dnf install docker -y 1>>$LogFile
+dnf install docker -y &>>$LogFile
 
 validate $? "Installation of the docker"

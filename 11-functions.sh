@@ -1,6 +1,9 @@
 #!/bin/bash
 
 userid=$(id -u)
+Timestamp=$(date +%F-%H-%M-%S)
+ScriptName=$(echo $0 | cut -d "." -f1)
+LogFile=/tmp/$timestamp/$scriptName
 
 if [ $userid -ne 0 ]
 then 
@@ -18,10 +21,10 @@ else
 echo "$2 is success"
 fi
 
-dnf install git -y 
+dnf install git -y &>>LogFile
 
 validate $? "Installation of the github"
 
-dnf install docker -y 
+dnf install docker -y &>>LogFile
 
-validate $? "Installation of the github"
+validate $? "Installation of the docker"

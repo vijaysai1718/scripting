@@ -2,9 +2,9 @@
 
 #conditions partice 
 Number=$1
-if [ $Number -gt 100 ]
+if [ $Number gt 100 ]
 then
 echo "$Number is greater than 100"
 else
-ech0 "$Number is less than 100"
+echo "$Number is less than 100"
 fi

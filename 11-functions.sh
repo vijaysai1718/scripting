@@ -14,7 +14,7 @@ echo "user is a super user he can install the software what he want"
 fi
 
 validate()
-if [ $1 ne 0 ]
+if [ $1 -ne 0 ]
 then 
 echo "$2 is failed please check the logs"
 else

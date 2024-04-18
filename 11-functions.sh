@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 Timestamp=$(date +%H-%M-%S)
-ScriptName=$(echo $0 | cut -d "." -f1)
+scriptName=$(echo $0 | cut -d "." -f1)
 LogFile=/tmp/$scriptName-$Timestamp.log
 
 if [ $userid -ne 0 ]

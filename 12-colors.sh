@@ -29,12 +29,17 @@ fi
 # &>> means it will store  the both error logs and success logs into the file 
 # 1>> means it will only  append the success logs to the file
 # 2>> means it will only  append the error logs to the file
+
+```
 dnf install github -y &>>$LogFile 
+```
 
 # $? this means it will give the pervious command status if 0 means it was success other wise failure 
 
 validate $? "Installation of the github" # vaiidate is the function name we are calling the function with the 2 arugments.
 
+```
 dnf install docker -y &>>$LogFile
+```
 
 validate $? "Installation of the docker"

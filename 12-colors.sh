@@ -5,9 +5,9 @@ Timestamp=$(date +%H-%M-%S)
 scriptName=$(echo $0 | cut -d "." -f1)
 LogFile=/tmp/$scriptName-$Timestamp.log
 
-Red="/e[31m"
-Green="/e[32m"
-Normal="/e[0m"
+Red="\e[31m"
+Green="\e[32m"
+Normal="\e[0m"
 
 if [ $userid -ne 0 ]
 then 

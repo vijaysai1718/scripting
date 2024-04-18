@@ -7,13 +7,14 @@ echo "Please get the super user access to perform this installation on software"
 exit 1
 else
 echo "you are having the super acess to install the software"
+fi
 
 dnf install mysql -y
 
 if [ $? -ne 0 ]
 then
 echo "installation failed due to some issues, please check the logs"
-exit1
+exit 1
 else
 echo "Mysql installation was successful"
 fi

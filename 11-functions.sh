@@ -21,10 +21,10 @@ else
 echo "$2 is success"
 fi
 
-dnf install github -y &>>$LogFile
+dnf install github -y 1>>$LogFile
 
 validate $? "Installation of the github"
 
-dnf install docker -y &>>$LogFile
+dnf install docker -y 1>>$LogFile
 
 validate $? "Installation of the docker"

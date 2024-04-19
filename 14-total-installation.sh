@@ -12,6 +12,7 @@ normal="\e[0m"
 if [ $user -ne 0 ]
 then 
 echo "He is not having the access to run the script, Please get the root access"
+exit 1
 else
 echo "User is a root user"
 fi

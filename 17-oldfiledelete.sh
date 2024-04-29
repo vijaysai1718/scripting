@@ -5,6 +5,7 @@ trap 'errorhandle ${LINENO} $BASH_COMMAND' ERR
 Red="\e[31m"
 Green="\e[32m"
 Normal="\e[0m"
+Yellow="\e[33m"
 
 
 
@@ -15,13 +16,15 @@ errorhandle()
 
 #check first source directory exists or not 
 
-SoureDirectory="/e/Devops Aws"
+SoureDirectory=/e/DevopsAws/Git
 
-if [ $? -ne 0 ]
+if [ -d $SoureDirectory ]
 then
 echo "Source file with this name $SoureDirectory is available"
 else
-echo "please check whether source directory is avilable"
+echo "please check whether source directory is available"
 fi
 
 
+
+#"thats not okay"

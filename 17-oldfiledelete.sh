@@ -16,7 +16,7 @@ errorhandle()
 
 #check first source directory exists or not 
 
-SoureDirectory=/e/DevopsAws/Git
+SoureDirectory=/e/DevopsAws
 
 if [ -d $SoureDirectory ]
 then
@@ -25,6 +25,20 @@ else
 echo "please check whether source directory is available"
 fi
 
+Files=$(find $SoureDirectory -name "*.log" -mtime +14)
 
-
+#using while loop
+while IFS= read -s dude
+do 
+echo "Deleting  log files which are  older than 14 days: $dude"
+rm -rf $dude
+done <<< $Files
+<<comment
 #"thats not okay"
+for line in {$Files}
+do
+echo "Deleting the log files which are  older than 14 days: $line"
+rm -rf $line
+done
+comment
+

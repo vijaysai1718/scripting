@@ -15,9 +15,9 @@ errorhandle()
 
 #check first source directory exists or not 
 
-SoureDirectory="e/Devops Aws"
+SoureDirectory="/e/Devops Aws"
 
-if[ $? -ne 0 ]
+if [ $? -ne 0 ]
 then
 echo "Source file with this name $SoureDirectory is available"
 else
